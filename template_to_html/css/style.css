@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 1300px;
+  margin: 0 auto;
+  min-height: 1300px;
+  height: auto;
+  background-color: pink;
+}
+/* Syntax
+@font-face{
+	font-family:nameof font ;
+	src:url(BebasNeue-Regular.ttf);
+}
+*/
+@font-face {
+  font-family: BebasNeue-Regular;
+  src: url(BebasNeue-Regular.ttf);
+}
+@font-face {
+  font-family: montbold;
+  src: url(montserrat-bold.ttf);
+}
+.header_menu {
+  width: 1300px;
+  height: 735px;
+  background-image: url("../image/bg_top1.jpg");
+}
+.logo_menu {
+  width: 1300px;
+  height: 150px;
+}
+.logo {
+  width: 250px;
+  height: 150px;
+  float: left;
+}
+.logo img {
+  margin-left: 50px;
+  margin-top: 50px;
+  width: 174px;
+  height: 74px;
+}
+.menu {
+  width: 1050px;
+  height: 150px;
+
+  float: left;
+  text-align: right;
+}
+.scooter_no {
+  width: 1000px;
+  margin-top: 50px;
+  padding-right: 50px;
+  font-family: montbold;
+  height: 50px;
+}
+.scooter {
+  width: 700px;
+  float: left;
+}
+.tollno {
+  width: 270px;
+  float: left;
+  height: 50px;
+  line-height: 30px;
+}
+.menubar {
+  width: 1000px;
+  height: 50px;
+  padding-right: 50px;
+}
+.menubar ul li {
+  display: inline-block;
+  width: 100px;
+}
+.menubar ul li a {
+  text-decoration: none;
+  font-family: BebasNeue-Regular;
+  font-weight: bold;
+  font-size: 20px;
+  color: #3d2514;
+}
+.offer {
+  width: 1200px;
+  margin: 50px 50px 0px 50px;
+  height: 535px;
+}
+.offertitle {
+  width: 600px;
+  height: 485px;
+  float: left;
+}
+.burger {
+  width: 600px;
+  height: 485px;
+  float: left;
+  background-image: url(../image/burger_combo.png);
+  background-size: fix;
+}
+.burger img {
+  padding-top: 300px;
+}
+.offer_msg {
+  border: 1px dashed #987033;
+  padding-left: 10px;
+  height: 30px;
+  margin: 100px 0 0 10px;
+  width: 300px;
+  font-family: BebasNeue-Regular;
+}
+@font-face {
+  font-family: AlfaSlabOne-Regular;
+  src: url(AlfaSlabOne-Regular.ttf);
+}
+.o_title1 {
+  font-family: AlfaSlabOne-Regular;
+  color: #3d2514;
+}
+.o_title2 {
+  font-family: AlfaSlabOne-Regular;
+  color: #3d2514;
+}
+.content {
+  width: 1160px;
+  margin: 70px;
+  height: auto;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.leftburger {
+  width: 550px;
+  height: 400px;
+  margin-right: 60px;
+  background-image: url(../image/left_burger1.png);
+  float: left;
+}
+.leftburger h1,
+h3 {
+  font-family: BebasNeue-Regular;
+  color: white;
+  margin-left: 20px;
+}
+.leftburger h3 {
+  padding-top: 20px;
+}
+.rightburger {
+  width: 550px;
+  height: 400px;
+  float: left;
+}
+.rb1 {
+  width: 550px;
+  height: 192px;
+  margin-bottom: 8px;
+  background-image: url(../image/r_burger1.png);
+}
+.rb2 {
+  width: 550px;
+  height: 192px;
+  margin-top: 8px;
+  background-image: url(../image/r_burger2.png);
+}
+.rb1,
+.rb2 h1,
+h3 {
+  font-family: BebasNeue-Regular;
+  color: white;
+}
+.foot_strip {
+  width: 1300px;
+  height: 50px;
+  background-color: #fff;
+}
+
+.row2 {
+  margin: 0 auto;
+  align-items: center;
+  margin-top: 20px;
+}
+.row2 button {
+  background-color: rgb(242, 238, 0);
+  color: #3d2514;
+  font-size: 25px;
+
+  padding: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
