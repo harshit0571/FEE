@@ -239,3 +239,55 @@ h3 {
   margin-top: 30px;
   color: #3d2514;
 }
+
+.row5 div {
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+  margin: 20px;
+}
+.row5 input {
+  height: 25px;
+  border: 2px solid black;
+  color: #3d2514;
+  padding: 10px;
+}
+.row5 button {
+  background-color: red;
+  color: white;
+  padding: 60px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.footer {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 50px;
+
+  height: 250px;
+  background-image: url("https://img.freepik.com/premium-photo/delicious-burgers-with-beef-vegetables-cheese-black-background-with-french-fries-side-view-copy-space_166116-3248.jpg");
+  background-size: auto;
+
+  display: flex;
+  color: white;
+  padding: 20px;
+}
+
+.footer-cont div {
+  display: flex;
+  justify-content: baseline;
+}
+.footer h1 {
+  margin: 10px;
+  margin-top: 40px;
+}
+.footer img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.footer span {
+  color: white;
+}
