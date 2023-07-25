@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    div {
+      height: 200px;
+      width: 200px;
+      border: 1px solid black;
+      margin: 0 auto;
+      margin-top: 100px;
+      border-radius: 0px;
+    }
+  </style>
+  <script>
+    let x = 0;
+    const increment = (val) => {
+      console.log(val);
+      x = x + val;
+      document.getElementById("Target").style.borderRadius = `${x}px`;
+    };
+    const decrement = (val) => {
+      console.log(val);
+      x = x - val;
+      document.getElementById("Target").style.borderRadius = `${x}px`;
+    };
+  </script>
+  <body>
+    <div id="Target"></div>
+    <br />
+    <button onclick="increment(1)">increment by 1</button>
+    <button onclick="increment(2)">increment by 2</button>
+    <button onclick="decrement(1)">decrement by 1</button>
+    <button onclick="decrement(2)">decrement by 2</button>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      const showCity = () => {
+        var state = document.getElementById("states").value;
+        console.log(state);
+        if (state == "mp") {
+          city = `<option value="indore">indore</option><option value="bhopal">bhopal</option><option value="ujain">ujain</option>`;
+          document.getElementById("cities").innerHTML = city;
+        } else if (state == "hp") {
+          city = `<option value="shimla">shimla</option><option value="manali">manali</option><option value="dharmshala">dharmshala</option>`;
+          document.getElementById("cities").innerHTML = city;
+        } else if (state == "haryana") {
+          city = `<option value="ambala">ambala</option><option value="hissar">hissar</option><option value="panchkula">panchkula</option>`;
+          document.getElementById("cities").innerHTML = city;
+        } else if (state == "punjab") {
+          city = `<option value="rajpura">rajpura</option><option value="ludhiana">ludhiana</option><option value="amritsar">amritsar</option>`;
+          document.getElementById("cities").innerHTML = city;
+        } else {
+          city = `<option value="none">select state</option>`;
+          document.getElementById("cities").innerHTML = city;
+        }
+      };
+    </script>
+    <style>
+      table {
+        margin: 0 auto;
+        width: 40%;
+        margin-top: 100px;
+        font-size: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <table cellpadding="5" cellspacing="5" border="1">
+      <tr>
+        <td>Select State</td>
+        <td>
+          <select id="states" onchange="showCity()">
+            <option value="none">select state</option>
+            <option value="mp">MP</option>
+            <option value="hp">HP</option>
+            <option value="punjab">punjab</option>
+            <option value="haryana">haryana</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>select city</td>
+        <td>
+          <select id="cities">
+            <option value="none">select city</option>
+          </select>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
