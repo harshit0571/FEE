@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+      function selectboxvalue() {
+        var ih, val;
+        ih = document.getElementById("fruit").innerHTML;
+        val = document.getElementById("fruit").value;
+        alert("innher html :- " + ih);
+        alert("selected value = " + val);
+      }
+    </script>
+    <style>
+      div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>select a fruit</h1>
+      <select id="fruit">
+        <option value="">choose fruit</option>
+        <option value="Banana">Banana</option>
+        <option value="Apple">Apple</option>
+        <option value="Grapes">Grapes</option>
+      </select>
+      <br />
+      <input type="button" onclick="selectboxvalue()" value="select" />
+    </div>
+  </body>
+</html>
