@@ -21,6 +21,26 @@
       const st = ["1", "2", "3"];
       st.push(["4", "5"]);
       document.getElementById("demo2").innerHTML = st.join("-");
+
+      //concate
+      fruits.concat(st);
+      console.log(fruits.concat(st));
+
+      let arr = [["ehllo", "1"], ["2"]];
+      console.log(arr);
+
+      arr = arr.flat();
+      console.log(arr);
+
+      let ar = [1, 2, 3, 0, 6, 5];
+      console.log(ar.sort());
+
+      count = 0;
+      ar.forEach((e) => {
+        ar[count] = e + 10;
+        count++;
+      });
+      console.log(ar);
     </script>
   </body>
 </html>
