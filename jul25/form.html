@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    div {
+      margin: 0 auto;
+      margin-top: 50px;
+      border: 1px solid black;
+      width: 200px;
+      height: 200px;
+      text-align: center;
+    }
+  </style>
+  <body>
+    <form>
+      <label>Name: </label>
+      <input type="text" id="name" />
+      <br />
+
+      <label>email: </label>
+      <input type="text" id="email" />
+      <br />
+
+      <label>password: </label>
+      <input type="text" id="password" />
+      <br />
+
+      <label>gender: </label>
+      <input type="text" id="gender" />
+      <br />
+      <button type="button" id="submitButton">Submit</button>
+    </form>
+
+    <div id="out"></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      // jQuery code to change the text of an element with the ID "myElement"
+      $(document).ready(function () {
+        $("#submitButton").click(function () {
+          var name = $("#name").val();
+          var email = $("#email").val();
+          var password = $("#password").val();
+          var gender = $("#gender").val();
+
+          var text =
+            "Name: " +
+            name +
+            "\n" +
+            "Email: " +
+            email +
+            "\n" +
+            "Password: " +
+            password +
+            "\n" +
+            "Gender: " +
+            gender;
+
+          $("#out").html(text);
+        });
+      });
+    </script>
+  </body>
+</html>

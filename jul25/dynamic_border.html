@@ -9,10 +9,23 @@
     div {
       height: 200px;
       width: 200px;
-      border: 1px solid black;
+      border: 3px solid black;
       margin: 0 auto;
       margin-top: 100px;
       border-radius: 0px;
+    }
+    button {
+      padding: 10px 50px 10px 10px;
+      background-color: red;
+      color: aliceblue;
+      font-size: 20px;
+      cursor: pointer;
+      border-radius: 20px;
+      text-align: center;
+    }
+    button:hover {
+      background-color: rgb(255, 103, 103);
+      border: 1px solid black;
     }
   </style>
   <script>
@@ -32,8 +45,8 @@
     <div id="Target"></div>
     <br />
     <button onclick="increment(1)">increment by 1</button>
-    <button onclick="increment(2)">increment by 2</button>
+    <button onclick="increment(5)">increment by 5</button>
     <button onclick="decrement(1)">decrement by 1</button>
-    <button onclick="decrement(2)">decrement by 2</button>
+    <button onclick="decrement(5)">decrement by 5</button>
   </body>
 </html>
