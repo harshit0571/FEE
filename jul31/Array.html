@@ -8,12 +8,19 @@
   <body>
     <p id="demo"></p>
     <p id="demo2"></p>
+    <p id="demo3"></p>
+
     <script>
       const users = new Array("harshit", "abc", "xyz");
       document.getElementById("demo").innerHTML = users.toString();
 
       const fruits = new Array("apple", "bannana", "mango");
       document.getElementById("demo2").innerHTML = fruits.join("-");
+
+      // push pop
+      const st = ["1", "2", "3"];
+      st.push(["4", "5"]);
+      document.getElementById("demo2").innerHTML = st.join("-");
     </script>
   </body>
 </html>
