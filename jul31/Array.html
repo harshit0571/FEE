@@ -7,9 +7,13 @@
   </head>
   <body>
     <p id="demo"></p>
+    <p id="demo2"></p>
     <script>
       const users = new Array("harshit", "abc", "xyz");
-      document.getElementById("demo").innerHTML = users;
+      document.getElementById("demo").innerHTML = users.toString();
+
+      const fruits = new Array("apple", "bannana", "mango");
+      document.getElementById("demo2").innerHTML = fruits.join("-");
     </script>
   </body>
 </html>
