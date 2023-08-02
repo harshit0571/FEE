@@ -4,12 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      .des {
+        width: 100%;
+        height: 50px;
+        background-color: coral;
+        border: 2px solid black;
+      }
+    </style>
   </head>
   <body>
     <div id="demo"></div>
     <script>
       let arr = [1, 2, 3, 4, 5];
-      arr.map((e) => console.log(e));
+      arr.map((e) => {
+        let child = `<div class="des">${e}</div>`;
+        console.log(child);
+        document.getElementById("demo").innerHTML += child;
+      });
     </script>
   </body>
 </html>
