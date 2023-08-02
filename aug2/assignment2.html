@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .even {
+        color: blue;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+      .odd {
+        color: red;
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- //create a textarea to take user name with comma seperated values, now
+    arrange all values in ascending order and print them one after another, with
+    different background , text color font family -->
+
+    <textarea id="text"> </textarea>
+    <button onclick="Add()">click</button>
+    <div id="demo"></div>
+    <script>
+      console.log("hello");
+      function Add() {
+        let data = document.getElementById("text").value;
+        let arr = data.split(",");
+        let count = 0;
+        arr.map((e) => {
+          let child = `<p class="${count % 2 == 0 ? "odd" : "even"}">${e}</p>`;
+          //   document.getElementById("demo").innerHTML = "d";
+          document.getElementById("demo").innerHTML += child;
+          count++;
+        });
+      }
+    </script>
+  </body>
+</html>
