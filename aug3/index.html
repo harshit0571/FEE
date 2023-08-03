@@ -4,13 +4,59 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      #container {
+        background-color: coral;
+        display: flex;
+        flex-direction: column;
+        width: 25%;
+        justify-content: end;
+      }
+      #container div {
+        width: 100%;
+        height: 100px;
+        background-color: red;
+        border: 1px solid black;
+      }
+    </style>
   </head>
   <body>
+    <!-- <p id="demo"></p> -->
+    <!-- <div id="container">
+      <div></div>
+      <div></div>
+
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div> -->
+
     <script>
-      var x = (a, b) => {
-        console.log(a + b);
-      };
-      x(1, 9);
+      //   var x = (a, b) => {
+      //     console.log(a + b);
+      //   };
+      //   x(1, 9);
+
+      //   var p = () => {
+      //     document.write("<b>arrow function wihtout any parameter</b>");
+      //   };
+      //   p();
+
+      //   const arr = [1, 2, 3, 4, 5];
+      //   const newArr = arr.flatMap((x) => x * 2);
+      //   document.getElementById("demo").innerHTML = newArr;
+
+      function toCel() {
+        return 10 * 5;
+      }
+      let value = toCel();
+      console.log(value);
+
+      const fruit = { name: "hello", age: 13 };
+      console.log(fruit.name);
     </script>
   </body>
 </html>
