@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="demo"></div>
+    <script>
+      let text =
+        '{"student":[' +
+        '{"sName":"amit verma","className":"B.Tech 2nd Year" },' +
+        '{"sName":"ajay","className":"B.Tech 3rd Year" },' +
+        '{"sName":"vijay","className":"B.Tech 3rd Year" }]}';
+
+      let check = '[{"sName"}]';
+      const obj = JSON.parse(text);
+      console.log(text);
+
+      document.getElementById("demo").innerHTML =
+        obj.student[1].sName + " " + obj.student[1].className;
+    </script>
+  </body>
+</html>

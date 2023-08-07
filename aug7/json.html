@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="demo"></div>
+    <script>
+      let data = [
+        { ItemName: "pencil", ItemCategory: "stationary", ItemId: 1 },
+        { ItemName: "pen", ItemCategory: "stationary", ItemId: 2 },
+        { ItemName: "dumbell", ItemCategory: "gym", ItemId: 3 },
+        { ItemName: "laptop", ItemCategory: "gadgets", ItemId: 4 },
+        { ItemName: "notebook", ItemCategory: "stationary", ItemId: 5 },
+      ];
+
+      data.map((item) => {
+        document.getElementById(
+          "demo"
+        ).innerHTML += `<p>${item.ItemId}, ${item.ItemName}, ${item.ItemCategory},</p>`;
+      });
+    </script>
+  </body>
+</html>
