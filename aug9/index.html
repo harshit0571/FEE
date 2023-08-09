@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .b {
+      color: pink;
+      font-size: 50px;
+      text-decoration: line-through;
+    }
+  </style>
+  <body>
+    <p>color changes to red</p>
+    <p>color changes to lime</p>
+    <button id="btn">click</button>
+    <script>
+      document.getElementById("btn").addEventListener("click", () => {
+        const x = document.getElementsByTagName("p");
+        x[0].classList.add("b");
+        x[0].innerHTML = "class added";
+        x[1].style.color = "lime";
+      });
+    </script>
+  </body>
+</html>
