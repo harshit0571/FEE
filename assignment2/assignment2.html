@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
+      body {
+        display: flex;
+        width: 100vw;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10;
+      }
       .even {
         color: blue;
         font-size: 20px;
@@ -15,6 +23,9 @@
         color: red;
         font-size: 50px;
         font-family: Georgia, "Times New Roman", Times, serif;
+      }
+      button {
+        margin: 20px;
       }
     </style>
   </head>
@@ -32,6 +43,8 @@
         let data = document.getElementById("text").value;
         let arr = data.split(",");
         let count = 0;
+        document.getElementById("demo").innerHTML = "";
+
         arr.map((e) => {
           let child = `<p class="${count % 2 == 0 ? "odd" : "even"}">${e}</p>`;
           //   document.getElementById("demo").innerHTML = "d";
