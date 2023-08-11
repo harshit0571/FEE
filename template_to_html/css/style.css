@@ -3,12 +3,9 @@
   padding: 0;
 }
 .container {
-  width: 100vw;
+  width: 1300px;
   margin: 0 auto;
   min-height: 1300px;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
   height: auto;
   background-color: white;
 }
@@ -27,7 +24,7 @@
   src: url(montserrat-bold.ttf);
 }
 .header_menu {
-  width: 100%;
+  width: 1300px;
   height: 735px;
   background-image: url("../image/bg_top1.jpg");
 }
@@ -298,4 +295,11 @@ h3 {
 
 button {
   cursor: pointer;
+}
+
+@media only screen and (max-width: 1000px) {
+  .container {
+    background-color: #3d2514;
+    width: 100vw;
+  }
 }
