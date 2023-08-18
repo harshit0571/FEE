@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="hamBurger" onclick="Show()">
+      <i class="fa fa-navicon" style="font-size: 36px"></i>
+    </div>
+    <div>
+      <div class="header">
+        <div class="menu">Home</div>
+        <div class="menu">About Me</div>
+        <div class="menu">Contact</div>
+        <div class="menu">Profile</div>
+        <div class="menu">Settings</div>
+      </div>
+    </div>
+    <script>
+      var checking = false;
+      const val = document.querySelector(".hamBurger");
+
+      val.addEventListener("click", () => {
+        if (checking === false) {
+          document.querySelector(".header").classList.add("active");
+          val.innerHTML = `<i class="fa fa-remove" style="font-size:36px"></i>`;
+          // val.classList.add("non-active");
+          checking = true;
+        } else {
+          document.querySelector(".header").classList.remove("active");
+          val.innerHTML = `<i class="fa fa-navicon" style="font-size:36px"></i>`;
+          // val.classList.remove("non-active");
+          checking = false;
+        }
+      });
+    </script>
+  </body>
+</html>
