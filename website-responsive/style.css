@@ -118,12 +118,10 @@ main {
   gap: 10px;
   margin-top: 10px;
 }
-
-#latest-products .btns {
+.btns {
   display: flex;
   gap: 5px;
-  width: 100%;
-  margin-right: 20px;
+  width: 80%;
   justify-content: end;
   padding: 50px;
 }
@@ -154,6 +152,48 @@ main {
 }
 .data button {
   border-radius: 10px;
+}
+
+.filled-heading {
+  background-color: var(--secondary-color);
+  color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.heading {
+  font-size: 35px;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+#more-products {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.view-all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.products-container-2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  width: 80%;
 }
 
 @media screen and (max-width: 450px) {
@@ -211,7 +251,7 @@ main {
     margin-top: 10px;
   }
 
-  #latest-products .btns {
+  .btns {
     display: flex;
     gap: 5px;
     width: 100%;
@@ -227,6 +267,21 @@ main {
     grid-template-columns: repeat(1, 1fr);
     gap: 5px;
   }
+
+  .products-container-2 {
+    display: grid;
+    width: 100%;
+    padding: 5px;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 5px;
+  }
+  .view-all {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    justify-content: space-between;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -239,7 +294,7 @@ main {
     margin-top: 10px;
   }
 
-  #latest-products .btns {
+  .btns {
     display: flex;
     gap: 5px;
     width: 100%;
@@ -249,6 +304,13 @@ main {
   }
 
   .products-container {
+    display: grid;
+    width: 80%;
+    padding: 5px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+  }
+  .products-container-2 {
     display: grid;
     width: 80%;
     padding: 5px;
@@ -267,7 +329,7 @@ main {
     margin-top: 10px;
   }
 
-  #latest-products .btns {
+  .btns {
     display: flex;
     gap: 5px;
     width: 100%;
@@ -283,6 +345,21 @@ main {
     grid-template-columns: repeat(1, 1fr);
     gap: 5px;
   }
+  .products-container-2 {
+    display: grid;
+    width: 80%;
+    padding: 5px;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 5px;
+  }
+  .view-all {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
 }
 
 button.fill {
@@ -296,6 +373,13 @@ button.fill2 {
   background-color: var(--secondary-color);
   color: white;
   border: 1px solid white;
+}
+button.fill3 {
+  padding: 10px 20px 10px 20px;
+  background-color: var(--secondary-color);
+  color: white;
+  border: 1px solid white;
+  border-radius: 10px;
 }
 button.hollow {
   padding: 10px 20px 10px 20px;
