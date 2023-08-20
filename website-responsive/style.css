@@ -81,6 +81,35 @@ main {
   border-radius: 10px;
 }
 
+#banner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.banner-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 1px solid white;
+  padding: 30px;
+  gap: 5px;
+  flex-shrink: 1;
+}
+
+.banner-cont p {
+  font-size: 24px;
+}
+
+.banner-cont h1 {
+  font-size: 18px;
+}
+
 @media screen and (max-width: 450px) {
   .right-heading {
     display: none;
@@ -127,6 +156,12 @@ main {
     left: auto;
     background-color: rgb(49, 49, 49);
   }
+}
+
+@media screen and (max-width: 786px) {
+  /* #banner {
+    flex-direction: column;
+  } */
 }
 
 button {
