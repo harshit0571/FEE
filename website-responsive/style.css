@@ -1,5 +1,5 @@
 :root {
-  --main-color: #4a80de;
+  --main-color: #232f3e;
   --secondary-color: #4ade80;
   --light: #f0f0f0;
 }
@@ -17,6 +17,10 @@ header {
   display: flex;
   position: relative;
   justify-content: space-between;
+  position: sticky;
+  z-index: 50;
+  height: 50px;
+  top: 0;
 }
 
 .logo {
@@ -40,6 +44,7 @@ header {
   display: flex;
   flex-direction: row;
   gap: 1rem;
+  cursor: pointer;
   margin-right: 2rem;
 }
 
@@ -48,6 +53,7 @@ nav {
   width: 100%;
   background-color: var(--light);
   padding: 3px;
+
   justify-content: space-evenly;
 }
 
@@ -170,6 +176,12 @@ main {
   padding: 10px;
   margin-top: 20px;
 }
+.heading2 {
+  font-size: 20px;
+  padding: 10px;
+  color: white;
+  margin-top: 20px;
+}
 
 #more-products {
   display: flex;
@@ -196,6 +208,49 @@ main {
   width: 80%;
 }
 
+footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  background-color: var(--main-color);
+}
+.back-to-top {
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+
+  width: 100%;
+  color: var(--main-color);
+  background-color: var(--light);
+}
+
+.footer-main {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: var(--main-color);
+  color: white;
+  flex-wrap: wrap;
+  border-bottom: 1px solid var(--light);
+}
+.details {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 250px;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.logo-footer {
+  background-color: var(--main-color);
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
 @media screen and (max-width: 450px) {
   .right-heading {
     display: none;
@@ -240,6 +295,26 @@ main {
     flex-direction: column;
     text-align: center;
     left: auto;
+  }
+  #banner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 20px;
+    flex-wrap: wrap;
+  }
+
+  .banner-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid white;
+    padding: 10px;
+    gap: 5px;
+    flex-shrink: 1;
   }
 
   #latest-products {
@@ -367,12 +442,14 @@ button.fill {
   background-color: var(--main-color);
   color: white;
   border: 1px solid white;
+  cursor: pointer;
 }
 button.fill2 {
   padding: 10px 20px 10px 20px;
   background-color: var(--secondary-color);
   color: white;
   border: 1px solid white;
+  cursor: pointer;
 }
 button.fill3 {
   padding: 10px 20px 10px 20px;
@@ -380,10 +457,18 @@ button.fill3 {
   color: white;
   border: 1px solid white;
   border-radius: 10px;
+  cursor: pointer;
 }
 button.hollow {
   padding: 10px 20px 10px 20px;
   background-color: white;
   color: var(--secondary-color);
   border: 1px solid var(--secondary-color);
+  cursor: pointer;
+}
+
+input {
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 5px;
 }
