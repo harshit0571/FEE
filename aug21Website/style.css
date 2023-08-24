@@ -49,7 +49,7 @@
     margin: 0 auto;
     height: auto;
     min-height: 500px;
-    background-color: antiquewhite;
+    background-color: white;
   }
   .clear {
     clear: both;
@@ -93,9 +93,53 @@
   .content {
     justify-content: center;
     height: 100%;
+    padding: 30px;
   }
   input {
     padding: 5px;
     border-radius: 5px;
+  }
+  .testimonial img {
+    height: 50px;
+    width: 50px;
+    margin: 0 auto;
+  }
+  .testimonial {
+    height: 100%;
+
+    margin: 0 auto;
+    padding: 30px;
+  }
+  .ad {
+    height: 100%;
+    background-color: plum;
+    box-sizing: border-box;
+    padding: 0;
+  }
+  .ad img {
+    width: 100%;
+    height: 90%;
+    display: block;
+  }
+  .ad div {
+    height: 10%;
+  }
+  .content-main {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .content-main img {
+    height: 100%;
+    width: 100%;
+  }
+  .footer {
+    height: 200px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
