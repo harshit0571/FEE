@@ -1,0 +1,75 @@
+.contact {
+  width: 100%;
+  height: 600px;
+  background-color: white;
+  justify-content: space-between;
+  display: flex;
+  align-items: baseline;
+}
+.contact-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  width: 50%;
+}
+.contact1-card {
+  display: flex;
+  width: 50%;
+  grid-area: 20px;
+  justify-content: flex-start;
+}
+
+.contact1-card i {
+  padding: 30px;
+  padding-left: 40px;
+  margin-right: 20px;
+  max-height: 50px;
+  max-width: 150px;
+  padding-right: 40px;
+  font-size: 40px;
+  border-radius: 50%;
+  background-color: coral;
+  color: white;
+}
+.contact-2 {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10%;
+  gap: 30px;
+}
+.contact-2 div {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  justify-content: baseline;
+  grid-area: 10px;
+}
+.contact-2 div input {
+  border: 0;
+  background: transparent;
+  outline: 0;
+  min-width: 400px;
+  margin-left: 40px;
+  padding: 10px;
+  border-bottom: 2px solid black;
+}
+.contact-2 div input.last {
+  padding-bottom: 50px;
+  border: 0;
+  background: transparent;
+  outline: 0;
+  border-bottom: 2px solid black;
+}
+.contact-2 button {
+  padding: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  max-width: 150px;
+  margin-left: 90px;
+  background-color: coral;
+  color: white;
+}
