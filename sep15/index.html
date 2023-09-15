@@ -11,12 +11,19 @@
         variable1;
         variable2;
 
-        constructor() {
-          console.log("hello");
+        constructor(var1, var2) {
+          this.variable1 = var1;
+          this.variable2 = var2;
+          console.log(this.variable1 + " " + this.variable2);
+        }
+        show() {
+          document.write(this.variable1 + "<br>");
+          document.write(this.variable2 + "<br>");
         }
       }
 
-      obj = new className();
+      const obj = new className("harshit", "btech");
+      obj.show();
     </script>
   </body>
 </html>
