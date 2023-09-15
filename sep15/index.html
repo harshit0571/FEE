@@ -20,16 +20,23 @@
           document.write(this.variable1 + "<br>");
           document.write(this.variable2 + "<br>");
         }
+        show2() {
+          document.write("dsddsdsds <br>");
+        }
       }
 
       class child extends className {
+        show3() {
+          document.write("hello");
+        }
         show2() {
-          show();
+          document.write("child function <br>");
         }
       }
 
       const obj = new child();
       obj.show2();
+      obj.show3();
     </script>
   </body>
 </html>
