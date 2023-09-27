@@ -1,21 +1,15 @@
-import logo from "./logo.svg";
 import "./App.css";
-import Button from "./Button";
-import Component from "./component/Component";
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import HomePage from "./HomePage";
 
 function App() {
   return (
-    <div className="App">
-      <header>Header</header>
-      <Component
-        name="Harshit"
-        university="Chitkara University"
-        rollNo="2110990571"
-        batchSize="78"
-        batchName="g9"
-        login={true}
-      />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage />}></Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
