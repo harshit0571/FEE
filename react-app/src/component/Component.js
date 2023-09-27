@@ -23,6 +23,7 @@ const Component = ({ name, university, rollNo, batchSize, login }) => {
           </button>
         </div>
       )}
+      {10 > 5 && alert("10 is greater than 5")}
     </div>
   );
 };
