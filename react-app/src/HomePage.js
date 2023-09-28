@@ -1,11 +1,12 @@
 import Component from "./component/Component";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Header from "./component/Header";
 
 const HomePage = () => {
   return (
     <div className="App">
-      <header>Header</header>
+      <Header />
       <Component
         name="Harshit"
         university="Chitkara University"
