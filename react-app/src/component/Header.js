@@ -8,16 +8,16 @@ export default function Header() {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="about">About us</Link>
+            <Link to="/about">About us</Link>
           </li>
           <li>
-            <Link to="services">Services</Link>
+            <Link to="/services">Services</Link>
           </li>
           <li>
             <Link to="">FAQ</Link>
           </li>
           <li>
-            <Link to="">Contact Us</Link>
+            <Link to="/contact">Contact Us</Link>
           </li>
         </ul>
       </div>
